@@ -1,10 +1,12 @@
 {
-  "name": "faizee-cli-currency-coverter",
-  "version": "1.0.0",
-  "description": "This is a CLI base currency coverter",
+  "name": "faizee-cli-currency-converter",
+  "version": "2.0.2",
+  "description": "This is a CLI-based currency coverter",
   "main": "index.js",
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "faizee-cli-currency-coverter": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -4,6 +4,9 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
+console.log(chalk.bgMagentaBright.bold("\n \t Welcome to Faizee Currency Converter\n"));
+
+
 const currency: any = {
     PKR: 1,    // base currency
     USD: 0.0036,
@@ -45,4 +48,4 @@ let amount = my_answer.amount
 let baseAmount = amount / fromAmount        // PKR Base currency
 let convertedAmount = baseAmount * toAmount
 
-console.log(chalk.bgRedBright.bold(`Converted Amount: ${convertedAmount}`));
+console.log(`Converted Amount: ${chalk.bgBlueBright.bold(convertedAmount.toFixed(2))}`);
